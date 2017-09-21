@@ -34,3 +34,4 @@ const app = new Vue({
 
 require('./elements/animations');
 require('./elements/responsive');
+require('./components/videos');

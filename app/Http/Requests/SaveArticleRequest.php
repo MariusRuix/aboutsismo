@@ -27,7 +27,6 @@ class SaveArticleRequest extends FormRequest
             'title' => 'required|max:255',
             'body' => 'required',
             'video' => 'required',
-            'author_id' => 'required|integer|exists:users,id',
         ];
     }
 }

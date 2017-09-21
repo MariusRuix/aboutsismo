@@ -5,14 +5,15 @@
         </div><!-- .form-group -->
 
         <div class="form-group">
+            {!! Form::label('video', 'Url del video', ['class' => 'control-label lead pull-left textarea-title']) !!}
+            {!! Form::text('video', $value = null, ['class' => 'form-control', 'placeholder' => 'Url del video'] ) !!}
+        </div><!-- .form-group -->
+
+        <div class="form-group">
             {!! Form::label('body', 'Extracto', ['class' => 'control-label lead pull-left textarea-title']) !!}<div class="clearfix"></div>
             {!! Form::textarea('body', $value = null, ['class' => 'form-control wysiwyg', 'rows' => 10] ) !!}
         </div><!-- .form-group -->
 
-        <div class="form-group">
-            {!! Form::label('video', 'Video', ['class' => 'control-label lead pull-left textarea-title']) !!}<div class="clearfix"></div>
-            {!! Form::textarea('video', $value = null, ['class' => 'form-control wysiwyg', 'rows' => 10] ) !!}
-        </div><!-- .form-group -->
     </div><!-- col-md-8 -->
 
     <div class="col-md-4">

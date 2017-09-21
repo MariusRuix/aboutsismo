@@ -14,8 +14,7 @@
             <div class="row">
                 <div class="information box-space box-grid text-center">
                     <div class="col-sm-10 col-sm-offset-1 col-lg-12 col-lg-offset-0">
-                        <a class="twitter-timeline" href="https://twitter.com/Tu_InfoMX">Tweets by Tu_InfoMX</a>
-                        <a class="twitter-timeline" href="https://twitter.com/locatel_mx">Tweets by locatel_mx</a>
+                        {!! isset($info->content) ? $info->content : '' !!}
                     </div>
                 </div>
             </div>

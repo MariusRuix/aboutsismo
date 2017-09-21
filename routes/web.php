@@ -55,6 +55,6 @@ $router->get('noticias/{category}', 'News\CategoriesController@index')->name('ca
  | Password Reset
  |--------------------------------------------------------------------------
  */
-$router->get('password/reset', 'App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
-$router->post('password/reset', 'App\Http\Controllers\Auth\ResetPasswordController@reset');
-$router->get('password/reset/{token}', 'App\Http\Controllers\Auth\ResetPasswordController@showResetForm')->name('password.reset');
+$router->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+$router->post('password/reset', 'Auth\ResetPasswordController@reset');
+$router->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');

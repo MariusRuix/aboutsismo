@@ -22,7 +22,8 @@ class PagesController extends Controller
         }
 
         $help = Page::whereSlug('como-ayudar')->first();
+        $info = Page::whereSlug('informacion')->first();
 
-        return view('home.index', compact('help', 'articles'));
+        return view('home.index', compact('help', 'articles', 'info'));
     }
 }
