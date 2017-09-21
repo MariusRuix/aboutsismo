@@ -2,6 +2,15 @@
   color: $brand-info;
   padding-bottom: 18px;
   padding-top: 18px;
+  @media screen and (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+    font-size: $font-size-small;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  @media screen and (max-width: $screen-xs-min - 1) {
+    font-size: $font-size-small;
+    padding: 3px 10px;
+  }
 
   &:active, &:focus, &:visited {
     background-color: transparent;

@@ -27,9 +27,16 @@ $(function() {
             $('.link--navbar').removeClass('active');
             $(event.target).addClass('active');
 
-            $('html, body').animate({
-                scrollTop: $('.' + $item).offset().top - 60
-            }, 1000);
+            if(screen.width > 767) {
+                $('html, body').animate({
+                    scrollTop: $('.' + $item).offset().top - 60
+                }, 1000);
+            } else {
+                $('html, body').animate({
+                    scrollTop: $('.' + $item).offset().top - 120
+                }, 1000);
+            }
+
         });
     }
 });

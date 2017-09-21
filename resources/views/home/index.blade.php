@@ -6,16 +6,16 @@
         <div class="container">
             <div class="row">
                 <div class="locations box-space box-grid">
-                    <div class="col-xs-12">
+                    <div class="col-sm-10 col-sm-offset-1 col-lg-12 col-lg-offset-0">
                         <iframe src="https://www.google.com/maps/d/embed?mid=1_-V97lbdgLFHpx-CtqhLWlJAnYY" width="100%" height="600"></iframe>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="information box-space box-grid text-center">
-                    <div class="col-xs-12">
-                        <a class="twitter-timeline" data-width="500" data-height="1200" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a>
-                        <a class="twitter-timeline" data-width="500" data-height="1200" href="https://twitter.com/Twitter">Tweets by TwitterDev</a>
+                    <div class="col-sm-10 col-sm-offset-1 col-lg-12 col-lg-offset-0">
+                        <a class="twitter-timeline" href="https://twitter.com/Tu_InfoMX">Tweets by Tu_InfoMX</a>
+                        <a class="twitter-timeline" href="https://twitter.com/locatel_mx">Tweets by locatel_mx</a>
                     </div>
                 </div>
             </div>

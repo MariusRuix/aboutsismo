@@ -1,7 +1,13 @@
 .navbar__list {
   list-style: none;
-  margin: 0 0 0 -15px;
+  margin: 0;
   padding: 0;
+  @media screen and (min-width: $screen-sm-min) {
+  	margin: 0 0 0 -15px;
+  }
+  @media screen and (max-width: $screen-xs-min - 1) {
+    text-align: center;
+  }
 
   li {
     display: inline-block;
@@ -10,4 +16,9 @@
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: lighten($gray-base, 70%);
+}
+
+.navbar-inverse .navbar-collapse {
+  display: block;
+  text-align: center;
 }
