@@ -1,0 +1,30 @@
+.box {
+  padding-bottom: $spacer-y * 2;
+  padding-top: $spacer-y;
+  display: inline-block;
+  width: 100%;
+}
+
+.box-space {
+  padding: $spacer 0;
+  margin-bottom: $spacer;
+  margin-top: $spacer;
+}
+
+.box-white {
+  background: white;
+}
+
+.box-dark {
+  background: $brand-dark;
+}
+
+.box-border {
+  @include box-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
+  border: 1px solid $panel-default-border;
+}
+
+.box-grid {
+  clear: both;
+  display: grid;
+}

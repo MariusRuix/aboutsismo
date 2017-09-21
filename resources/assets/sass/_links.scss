@@ -1,0 +1,18 @@
+.nav .link--navbar {
+  color: $brand-info;
+  padding-bottom: 18px;
+  padding-top: 18px;
+
+  &:active, &:focus, &:visited {
+    background-color: transparent;
+    color: $brand-info;
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+  }
+}

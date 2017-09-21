@@ -1,9 +1,17 @@
+@charset "utf-8";
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
-// Variables
 @import "variables";
 
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+@import "../../../node_modules/sweetalert/dev/sweetalert";
+
+@import "general";
+
+@import "box";
+@import "links";
+
+//@import "regions/footer";
+@import "regions/navbar";
+
+@import "pages/home";

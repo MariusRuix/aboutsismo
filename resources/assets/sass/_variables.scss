@@ -1,38 +1,132 @@
+/*
+|--------------------------------------------------------------------------
+| Grid
+|--------------------------------------------------------------------------
+*/
 
-// Body
-$body-bg: #f5f8fa;
+$grid-columns:                         12;
+$grid-gutter-width:                    30px;
 
-// Borders
-$laravel-border-color: darken($body-bg, 10%);
-$list-group-border: $laravel-border-color;
-$navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
+/*
+|--------------------------------------------------------------------------
+| Colors
+|--------------------------------------------------------------------------
+*/
 
-// Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
+$brand-primary:                        #2F5B94;
+$brand-secondary:                      #E05915;
+$brand-success:                        #00D290;
+$brand-info:                           #C6D8EB;
+$brand-warning:                        #FFA000;
+$brand-danger:                         #DD1717;
+$brand-dark:                           #293A4A;
 
-// Typography
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
-$line-height-base: 1.6;
-$text-color: #636b6f;
+$gray-base:                            #000;
+$gray-darker:                          lighten($gray-base, 13.5%); // #222
+$gray-dark:                            lighten($gray-base, 20%);   // #333
+$gray:                                 lighten($gray-base, 33.5%); // #555
+$gray-light:                           lighten($gray-base, 46.7%); // #777
+$gray-lighter:                         lighten($gray-base, 93.5%); // #eee
 
-// Navbar
-$navbar-default-bg: #fff;
+$input-color:                          $gray;
+$input-border:                         #CCC;
+$input-bg:                             #FFF;
+$input-bg-disabled:                    $gray-lighter;
 
-// Buttons
-$btn-default-color: $text-color;
+$btn-secondary-color:                  #FFF;
+$btn-secondary-bg:                     $brand-secondary;
+$btn-secondary-border:                 darken($btn-secondary-bg, 5%);
 
-// Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
+$custom-select-color:                  $input-color;
+$custom-select-bg:                     $input-bg;
+$custom-select-disabled-bg:            $input-bg-disabled;
 
-// Panels
-$panel-default-heading-bg: #fff;
+$brand-facebook:                       #3B5998;
+$brand-facebook-dark:                  darken($brand-facebook, 5%);
+
+/*
+|--------------------------------------------------------------------------
+| Icons
+|--------------------------------------------------------------------------
+*/
+
+// override icons path from node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+$icon-font-path:                       "~bootstrap-sass/assets/fonts/bootstrap/";
+
+// override font path from node_modules/font-awesome/scss/_variables.scss
+$fa-font-path:                         "~font-awesome/fonts";
+
+/*
+|--------------------------------------------------------------------------
+| Typography
+|--------------------------------------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,500,700');
+
+$font-family-sans-serif:               'Roboto', sans-serif;
+$font-family-base:                     $font-family-sans-serif;
+$font-weight-base:                     400;
+$text-color:                           #5F8DB2;
+
+$font-size-base:                       16px;
+$font-size-large:                      ceil(($font-size-base * 1.25));
+$font-size-small:                      ceil(($font-size-base * 0.85));
+
+$link-color:                           $brand-primary;
+$link-hover-color:                     darken($link-color, 15%);
+$link-hover-decoration:                underline;
+
+$btn-font-weight:                      700;
+
+$input-color:                          $text-color;
+$input-border:                         $brand-primary;
+$input-border-focus:                   $brand-primary;
+$input-color-placeholder:              lighten($text-color, 30%);
+
+$headings-font-family:                 'Hind', sans-serif;
+$headings-font-weight:                 400;
+$headings-line-height:                 1.1;
+$headings-color:                       $brand-primary;
+
+/*
+|--------------------------------------------------------------------------
+| Navbar
+|--------------------------------------------------------------------------
+*/
+
+$navbar-height:                        58px;
+$navbar-margin-bottom:                 0px;
+$navbar-border-radius:                 0px;
+$navbar-default-color:                 #777;
+
+// Navbar inverse
+$navbar-inverse-bg:                    $brand-dark;
+$navbar-inverse-border:                darken($brand-dark, 5%);
+
+// Navbar inverse links
+$navbar-inverse-link-color:            $gray-lighter;
+$navbar-inverse-link-hover-color:      $brand-success;
+
+/*
+|--------------------------------------------------------------------------
+| Spacing
+|--------------------------------------------------------------------------
+*/
+
+$spacer:                               20px;
+$spacer-x:                             $spacer;
+$spacer-y:                             $spacer;
+
+/*
+|--------------------------------------------------------------------------
+| Panels
+|--------------------------------------------------------------------------
+*/
+
+$panel-border-radius:                  0px;
+$panel-default-border:                 #eee;
+$panel-default-heading-bg:             white;
+$panel-footer-bg:                      white;
+$panel-default-text:                   $text-color;
