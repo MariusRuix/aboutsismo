@@ -48,13 +48,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="contacts box-space box-grid">
-                    <div class="col-xs-12">
-
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 

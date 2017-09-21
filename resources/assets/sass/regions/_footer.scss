@@ -1,0 +1,20 @@
+footer,
+.footer {
+  background-color: $brand-dark;
+  padding-top: $spacer-y;
+  padding-bottom: $spacer-y;
+}
+
+.footer-inverse {
+  color: $brand-info;
+
+  a {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: lighten($gray-base, 70%);
+      text-decoration: none;
+    }
+  }
+}

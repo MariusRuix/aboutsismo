@@ -12,10 +12,7 @@
                     <a href="#" class="link--navbar" data-item="sources">Fuentes</a>
                 </li>
                 <li>
-                    <a href="#" class="link--navbar" data-item="help">Ayudar</a>
-                </li>
-                <li>
-                    <a href="#" class="link--navbar" data-item="contacts">Contactos</a>
+                    <a href="#" class="link--navbar" data-item="help">¿Cómo ayudar?</a>
                 </li>
             </ul>
         </div><!-- .navbar-header -->
@@ -27,7 +24,7 @@
                     <li><a href="/login">Iniciar sesión</a></li>
                 @else
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle btn btn-secondary btn-square navbar-btn" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <a href="#" class="dropdown-toggle btn btn-secondary btn-square navbar-btn m-a-0" data-toggle="dropdown" role="button" aria-expanded="false">
                             {{ Auth::user()->name }}
                         </a>
 
