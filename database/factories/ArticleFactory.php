@@ -18,6 +18,7 @@ $factory->define(Article::class, function (Faker $faker) {
         'category_id' => function () {
             return factory(Category::class)->create()->id;
         },
+        'video' => '',
         'author_id' => function () {
             return factory(User::class)->create()->id;
         },

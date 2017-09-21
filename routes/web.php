@@ -29,8 +29,6 @@ $router->pattern('slug', '[a-z0-9-]+');
  */
 
 $router->get('/', 'PagesController@home')->name('page.home');
-$router->get('como-ayudar', 'PagesController@help')->name('page.help');
-$router->get('mapa-de-ayuda', 'PagesController@maps')->name('page.maps');
 
 /*
  |--------------------------------------------------------------------------

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Page;
+use App\Models\Article;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -12,32 +13,16 @@ class PagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function home()
+    public function home(Request $request)
     {
-        return view('home.index');
-    }
+        if ($query = $request->get('q')) {
+            $articles = Article::search($query)->latest()->paginate();
+        } else {
+            $articles = Article::latest()->paginate();
+        }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function help()
-    {
-        $page = Page::whereSlug('como-ayudar')->first();
+        $help = Page::whereSlug('como-ayudar')->first();
 
-        return view('pages.help', compact('page'));
-    }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function maps()
-    {
-        $page = Page::whereSlug('mapa-de-ayuda')->first();
-
-        return view('pages.maps', compact('page'));
+        return view('home.index', compact('help', 'articles'));
     }
 }

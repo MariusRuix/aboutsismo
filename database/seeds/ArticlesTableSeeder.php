@@ -14,11 +14,12 @@ class ArticlesTableSeeder extends Seeder
      */
     public function run()
     {
+        $video = '<iframe width="100%" height="500" src="https://www.youtube.com/embed/S_CYdTmj7lA" frameborder="0" allowfullscreen></iframe>';
         $authors = User::count();
         $categories = Category::count();
 
         factory(Article::class, 20)
-            ->make(['author_id' => null, 'category_id' => null])
+            ->make(['video' => $video, 'author_id' => null, 'category_id' => null])
             ->each(function (Article $article) use ($authors, $categories) {
                 $article
                     ->author()->associate(rand(1, $authors))

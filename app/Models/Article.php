@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Presenters\ArticlePresenter;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Models\Traits\{ Presentable, Sluggable };
 use Illuminate\Database\Eloquent\Relations\ { BelongsTo, HasMany };
@@ -20,6 +21,7 @@ class Article extends Model
      */
     protected $fillable = [
         'title',
+        'video',
         'body',
     ];
 
@@ -28,7 +30,7 @@ class Article extends Model
      *
      * @var string
      */
-    //protected $presenter = ArticlePresenter::class;
+    protected $presenter = ArticlePresenter::class;
 
     /**
      * Define the sluggable model-specific configurations.

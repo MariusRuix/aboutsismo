@@ -12,6 +12,9 @@
                     <a href="#" class="link--navbar" data-item="sources">Fuentes</a>
                 </li>
                 <li>
+                    <a href="#" class="link--navbar" data-item="help">Ayudar</a>
+                </li>
+                <li>
                     <a href="#" class="link--navbar" data-item="contacts">Contactos</a>
                 </li>
             </ul>

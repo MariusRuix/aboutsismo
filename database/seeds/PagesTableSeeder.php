@@ -13,6 +13,5 @@ class PagesTableSeeder extends Seeder
     public function run()
     {
         factory(Page::class)->create(['title' => 'Comó ayudar']);
-        factory(Page::class)->create(['title' => 'Mapa de ayuda']);
     }
 }
