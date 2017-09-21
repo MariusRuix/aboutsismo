@@ -20,13 +20,15 @@
 $router->pattern('id', '\d+');
 $router->pattern('slug', '[a-z0-9-]+');
 
+//Auth::routes();
+
 /*
  |--------------------------------------------------------------------------
  | Pages
  |--------------------------------------------------------------------------
  */
 
-$router->get('/', 'PagesController@index')->name('page.home');
+$router->get('/', 'PagesController@home')->name('page.home');
 $router->get('como-ayudar', 'PagesController@help')->name('page.help');
 $router->get('mapa-de-ayuda', 'PagesController@maps')->name('page.maps');
 
@@ -49,3 +51,12 @@ $router->get('logout', 'Auth\LoginController@logout');
 $router->get('noticias', 'News\ArticlesController@index')->name('news.articles.index');
 $router->get('noticias/{category}', 'News\CategoriesController@index')->name('categories.index');
 //$router->get('noticias/{category}/{slug}', 'News\ArticlesController@show')->name('news.articles.show');
+
+/*
+ |--------------------------------------------------------------------------
+ | Password Reset
+ |--------------------------------------------------------------------------
+ */
+$router->get('password/reset', 'App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+$router->post('password/reset', 'App\Http\Controllers\Auth\ResetPasswordController@reset');
+$router->get('password/reset/{token}', 'App\Http\Controllers\Auth\ResetPasswordController@showResetForm')->name('password.reset');

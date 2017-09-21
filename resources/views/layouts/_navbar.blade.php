@@ -25,12 +25,13 @@
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle btn btn-secondary btn-square navbar-btn" data-toggle="dropdown" role="button" aria-expanded="false">
-                            Name Ipsum
+                            {{ Auth::user()->name }}
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
                             @if(Auth::user()->isAdmin())
-                                <li><a href="/dashboard">Dashboard</a></li>
+                                <li><a href="/dashboard"><i class="fa fa-cog"></i> Dashboard</a></li>
+                                <li class="divider"></li>
                             @endif
                             <li><a href="/logout" class="text-small"><i class="fa fa-sign-out"></i> Cerrar sesión</a></li>
                         </ul>

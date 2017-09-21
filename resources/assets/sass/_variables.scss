@@ -51,10 +51,10 @@ $brand-facebook-dark:                  darken($brand-facebook, 5%);
 */
 
 // override icons path from node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
-$icon-font-path:                       "~bootstrap-sass/assets/fonts/bootstrap/";
+$icon-font-path:                       "/fonts/vendor/bootstrap-sass/bootstrap/";
 
 // override font path from node_modules/font-awesome/scss/_variables.scss
-$fa-font-path:                         "~font-awesome/fonts";
+$fa-font-path:                         "/fonts/vendor/font-awesome";
 
 /*
 |--------------------------------------------------------------------------
