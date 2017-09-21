@@ -3,16 +3,16 @@
         <div class="navbar-header">
             <ul class="nav navbar__list">
                 <li>
-                    <a href="#" class="link--navbar">Ubicaciones</a>
+                    <a href="#" class="link--navbar active" data-item="locations">Ubicaciones</a>
                 </li>
                 <li>
-                    <a href="#" class="link--navbar">Información</a>
+                    <a href="#" class="link--navbar" data-item="information">Información</a>
                 </li>
                 <li>
-                    <a href="#" class="link--navbar">Fuentes</a>
+                    <a href="#" class="link--navbar" data-item="sources">Fuentes</a>
                 </li>
                 <li>
-                    <a href="#" class="link--navbar">Contactos</a>
+                    <a href="#" class="link--navbar" data-item="contacts">Contactos</a>
                 </li>
             </ul>
         </div><!-- .navbar-header -->

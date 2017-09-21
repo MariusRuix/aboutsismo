@@ -2,5 +2,13 @@
 
   iframe {
     border: none;
-  }  
+  }
+
+  .information {
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

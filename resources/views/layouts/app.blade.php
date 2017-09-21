@@ -32,5 +32,8 @@
 
         <script src="/js/app.js"></script>
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        @include('layouts._modals')
+        
     </body>
 </html>

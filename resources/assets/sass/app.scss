@@ -6,10 +6,15 @@
 @import "../../../node_modules/font-awesome/scss/font-awesome";
 @import "../../../node_modules/sweetalert/dev/sweetalert";
 
+@import "utilities/spacers";
+
 @import "general";
 
 @import "box";
+@import "images";
 @import "links";
+@import "modals";
+@import "type";
 
 //@import "regions/footer";
 @import "regions/navbar";

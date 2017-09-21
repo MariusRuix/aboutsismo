@@ -20,3 +20,16 @@ Vue.component('example', require('./components/Example.vue'));
 const app = new Vue({
     el: '#app'
 });
+
+/*
+ |--------------------------------------------------------------------------
+ | Custom Elements
+ |--------------------------------------------------------------------------
+ |
+ | Here we'll set up the custom components, plugins, and section specific
+ | javascript files that are going to be needed to run our application
+ | this is a nice place to require all sorts of custom jQuery code.
+ |
+ */
+
+require('./elements/animations');

@@ -10,9 +10,23 @@
     text-decoration: none;
   }
 
-  &:hover {
+  &:hover, &.active {
     background-color: transparent;
     color: white;
+    text-decoration: none;
+  }
+}
+
+.link--source {
+
+  &:active, &:focus, &:visited {
+    color: $brand-primary;
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: black;
     text-decoration: none;
   }
 }
