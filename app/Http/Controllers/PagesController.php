@@ -16,9 +16,9 @@ class PagesController extends Controller
     public function home(Request $request)
     {
         if ($query = $request->get('q')) {
-            $articles = Article::search($query)->latest()->paginate();
+            $articles = Article::search($query)->latest()->paginate(12);
         } else {
-            $articles = Article::latest()->paginate();
+            $articles = Article::latest()->paginate(12);
         }
 
         $help = Page::whereSlug('como-ayudar')->first();

@@ -36,6 +36,10 @@
                             </div>
                         @endforeach
 
+                        <div class="pagination-container pull-right">
+                            <nav>{!! $articles->render() !!}</nav>
+                        </div><!-- .pagination-container -->
+
                     </div>
                 </div>
             </div>

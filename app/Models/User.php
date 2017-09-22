@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Traits\Presentable;
 use Illuminate\Notifications\Notifiable;
+use App\Models\Presenters\UserPresenter;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\ { Builder, SoftDeletes };
@@ -61,7 +62,18 @@ class User extends Authenticatable
      *
      * @var string
      */
-    //protected $presenter = UserPresenter::class;
+    protected $presenter = UserPresenter::class;
+
+    /**
+     * Check if the user has a value set for the specified attribute key.
+     *
+     * @param  string  $attributeKey
+     * @return bool
+     */
+    public function has(string $attributeKey) : bool
+    {
+        return (bool) $this->getAttribute($attributeKey);
+    }
 
     /**
      * Check if the user has an active account.
@@ -78,9 +90,19 @@ class User extends Authenticatable
      *
      * @return bool
      */
+    public function isSuperAdmin() : bool
+    {
+        return in_array($this->id, [1,2,3]);
+    }
+
+    /**
+     * Check if the user has an active account.
+     *
+     * @return bool
+     */
     public function isAdmin() : bool
     {
-        return ends_with($this->email, ['@datacreativa.rocks']);
+        return true;
     }
 
     /*

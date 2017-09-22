@@ -9,6 +9,7 @@ class UsersTableSeeder extends Seeder
      * @var array
      */
     protected $admins = [
+        ['name' => 'Contacto informatemx', 'email' => 'contacto.informatemx@gmail.com'],
         ['name' => 'Carlos Hernandez', 'email' => 'chernandez@datacreativa.rocks'],
         ['name' => 'Mario Ruiz', 'email' => 'mruiz@datacreativa.rocks'],
     ];

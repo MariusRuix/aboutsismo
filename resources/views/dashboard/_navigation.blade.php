@@ -33,6 +33,8 @@
                 <li>
                     <a href="/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                 </li>
+
+                <!-- Pages -->
                 <li>
                     <a href="#"><i class="fa fa-files-o fa-fw"></i> Segmentos<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
@@ -44,6 +46,8 @@
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
+
+                <!-- Videos -->
                 <li>
                     <a href="#"><i class="fa fa-video-camera fa-fw"></i> Videos<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
@@ -56,6 +60,22 @@
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
+
+                <!-- Usuarios -->
+
+                @if(Auth::user()->isSuperAdmin())
+                    <li>
+                        <a href="#"><i class="fa fa-user"></i> Usuarios<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{{ route('dashboard.users.index') }}"> Ver Usuarios</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('dashboard.users.create') }}"> + Nuevo Usuario</a>
+                            </li>
+                        </ul>
+                    </li>
+                @endif
             </ul>
         </div>
         <!-- /.sidebar-collapse -->

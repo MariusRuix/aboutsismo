@@ -15,7 +15,6 @@ class ImagesController extends Controller
      */
     public function store(Request $request)
     {
-        logger($request);
         $this->validate($request, ['file' => 'required|mimes:jpg,jpeg,png,gif']);
 
         $path = $request->file('file')->store(
