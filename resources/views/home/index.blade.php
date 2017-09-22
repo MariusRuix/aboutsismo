@@ -27,7 +27,7 @@
                                 @foreach($trheearticles as $article)
                                     <div class="col-sm-4">
                                         <a href="#modal-source-{{ $article->id }}" data-toggle="modal" class="link--source">
-                                            <img src="http://via.placeholder.com/350x200" class="image--source" alt="Video poster">
+                                            <img src="{{ $article->present()->featured_image }}" class="image--source" alt="Video poster">
                                             <h1 class="sources__title">{{ $article->title }}</h1>
                                             <p class="m-b">{{ $article->present()->excerpt() }}</p>
                                         </a>

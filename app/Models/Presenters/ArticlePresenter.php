@@ -19,4 +19,16 @@ class ArticlePresenter extends Presenter
 
         return 'Sin autor';
     }
+
+    /**
+     * @return mixed
+     */
+    public function featured_image()
+    {
+        $image = $this->entity->hasMedia('featured_image')
+            ? $this->entity->getMedia('featured_image')->last()->getUrl()
+            : 'http://via.placeholder.com/350x200';
+
+        return $image;
+    }
 }

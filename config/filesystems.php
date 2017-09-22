@@ -55,6 +55,11 @@ return [
             'visibility' => 'public',
         ],
 
+        'media' => [
+            'driver' => 'local',
+            'root' => public_path().'/images/media',
+        ],
+
         'uploads' => [
             'driver' => 'local',
             'root' => public_path(),

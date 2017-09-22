@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-lg-12">
 
-            {!! Form::model($article, ['route' => ['dashboard.videos.update', $article->id], 'method' => 'PATCH']) !!}
+            {!! Form::model($article, ['route' => ['dashboard.videos.update', $article->id], 'method' => 'PATCH', 'files' => true]) !!}
 
                 @include('dashboard::articles.partials._form', ['btn' => 'Actualizar'])
 

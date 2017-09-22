@@ -49,8 +49,11 @@ class ArticlesController extends Controller
     {
         $article = new Article($request->all());
         $article->author()->associate(User::findOrFail($request->user()->id));
-
         $article->save();
+
+        if ($file = $request->file('featured_image')) {
+            $article->addMedia($file)->toMediaCollection('featured_image', 'media');
+        }
 
         return redirect()
             ->back()
@@ -84,6 +87,10 @@ class ArticlesController extends Controller
         $article = Article::find($id);
 
         $article->update($request->all());
+
+        if ($file = $request->file('featured_image')) {
+            $article->addMedia($file)->toMediaCollection('featured_image', 'media');
+        }
 
         return redirect()
             ->back()

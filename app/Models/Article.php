@@ -5,14 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Presenters\ArticlePresenter;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 use App\Models\Traits\{ Presentable, Sluggable };
+use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 use Illuminate\Database\Eloquent\Relations\ { BelongsTo, HasMany };
 
-class Article extends Model
+class Article extends Model implements HasMedia
 {
     use Presentable,
         Sluggable,
-        SoftDeletes;
+        SoftDeletes,
+        HasMediaTrait;
 
     /**
      * The attributes that are mass assignable.
