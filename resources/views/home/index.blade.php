@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="home">
+    <div class="home box-height">
         <div class="container">
             <div class="row">
                 <div class="locations box-space box-grid">

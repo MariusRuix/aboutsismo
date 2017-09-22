@@ -1,7 +1,4 @@
 .home {
-  @media screen and (max-width: $screen-sm-max) {
-    margin-top: 60px;
-  }
 
   iframe {
     border: none;
@@ -24,5 +21,11 @@
 
   .sources {
     display: block;
+  }
+}
+
+.home, .login {
+  @media screen and (max-width: $screen-sm-max) {
+    margin-top: 60px;
   }
 }
