@@ -31,4 +31,7 @@
 
 .box-height {
   min-height: 85vh;
+  @media screen and (max-width: $screen-sm-max) {
+    margin-top: 60px;
+  }
 }

@@ -23,9 +23,3 @@
     display: block;
   }
 }
-
-.home, .login {
-  @media screen and (max-width: $screen-sm-max) {
-    margin-top: 60px;
-  }
-}
