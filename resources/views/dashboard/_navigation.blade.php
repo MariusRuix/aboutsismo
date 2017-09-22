@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">About Sismo</a>
+        <a class="navbar-brand" href="/">InfórmateMX</a>
     </div>
     <!-- /.navbar-header -->
 

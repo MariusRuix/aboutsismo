@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="_token" content="{{ csrf_token() }}">
-    <title>Dashboard » about sismo</title>
+    <title>Dashboard » InfórmateMX</title>
     <link href="{{ asset('images/favicon.png') }}" rel="icon" type="image/png">
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
 </head>

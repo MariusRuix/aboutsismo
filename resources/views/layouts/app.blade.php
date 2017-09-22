@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta http-equiv="content-language" content="es-MX">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ config('app.name', 'InfórmateMX') }}</title>
+        <title>InfórmateMX</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
 
